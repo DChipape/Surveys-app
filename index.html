@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Surveys</title>
+    </head>
+    <body>
+        <!-- Form -->
+         <form action="http://localhost:3000/submit-survey" method="post" id="surveyForm">
+            <div class="form-box">
+        <!-- Header at the top -->
+        <div class="header-row">
+            <div class="logo">_Surveys</div>
+            <div class="right-header">
+                <a href="index.html" class="active-link">FILL OUT SURVEY</a>
+                <a href="result.html">VIEW SURVEY RESULTS</a>
+            </div>
+        </div>
+
+        <br>
+        <br>
+         
+                <!-- Personal Details -->
+                <div class="form-section">
+                    <div class="section-title">Personal Details:</div>
+                    <div class="input-fields">
+                    <label for="name">Full Names</label>
+                    <br>
+                    <input type="text" id="name" name="name">
+                    <span id="nameError" class="error-message"></span>
+                    
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email">
+                    <span id="emailError" class="error-message"></span>
+
+                    <br>
+                    <label for="name">Date of Birth</label>
+                    <br>
+                    <input type="date" id="dob" name="dob">
+                    <span id="dobError" class="error-message"></span>
+
+                    <br>
+                    <label for="contact">Contact Number</label>
+                    <br>
+                    <input type="tel" id="contact" name="contact">
+                    <span id="contactError" class="error-message"></span>
+                </div>
+            </div>
+                    <br><br>
+
+        <!-- Favorite Food Checkboxes -->
+        <div class="favorite-food-section">
+            <!-- Left: Section label -->
+            <div class="section-label">
+              <label for="myCheck">What is your favorite food?</label>
+            </div>
+                
+        <!-- Right: Horizontal checkboxes -->
+        <div class="checkbox-options"> 
+                <input type="checkbox" id="pizza" name="food" value="Pizza">
+                <label for="pizza">Pizza</label>
+                
+                <input type="checkbox" id="pasta" name="food" value="Pasta">
+                <label for="pasta">Pasta</label>
+                
+                <input type="checkbox" id="pap" name="food" value="Pap and Wors">
+                <label for="pap">Pap and Wors</label>
+                
+                <input type="checkbox" id="other" name="food" value="Other">
+                <label for="other">Other</label>
+            </div>
+            <span id="foodError" class="error-message"></span>
+            </div>
+                <br>
+                <br>
+        <!-- Radio Rating Table -->
+        <p>Please rate your level of agreement on a scale from 1 to 5, with 1 being "strongly agree" and 5 being "strongly disagree."</p>
+                <table>
+                    <colgroup>
+                        <col style="width: 27%;">           
+                        <col style="width: 12%;">            
+                        <col style="width: 12%;">            
+                        <col style="width: 12%;">            
+                        <col style="width: 12%;">            
+                        <col style="width: 12%;">            
+                      </colgroup>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Strongly Agree</th>
+                            <th>Agree</th>
+                            <th>Neutral</th>
+                            <th>Disagree</th>
+                            <th>Strongly Disagree</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>I like to watch movies</td>
+                            <td><input type="radio" name="q1" value="1"></td>
+                            <td><input type="radio" name="q1" value="2"></td>
+                            <td><input type="radio" name="q1" value="3"></td>
+                            <td><input type="radio" name="q1" value="4"></td>
+                            <td><input type="radio" name="q1" value="5"></td>
+                        </tr>
+                        <span id="q1Error" class="error-message"></span>
+                        <tr>
+                            <td>I like to listen to radio</td>
+                            <td><input type="radio" name="q2" value="1"></td>
+                            <td><input type="radio" name="q2" value="2"></td>
+                            <td><input type="radio" name="q2" value="3"></td>
+                            <td><input type="radio" name="q2" value="4"></td>
+                            <td><input type="radio" name="q2" value="5"></td>
+                        </tr>
+                        <span id="q2Error" class="error-message"></span>
+                        <tr>
+                            <td>I like to eat out</td>
+                            <td><input type="radio" name="q3" value="1"></td>
+                            <td><input type="radio" name="q3" value="2"></td>
+                            <td><input type="radio" name="q3" value="3"></td>
+                            <td><input type="radio" name="q3" value="4"></td>
+                            <td><input type="radio" name="q3" value="5"></td>
+                        </tr>
+                        <span id="q3Error" class="error-message"></span>
+                        <tr>
+                            <td>I like to watch TV</td>
+                            <td><input type="radio" name="q4" value="1"></td>
+                            <td><input type="radio" name="q4" value="2"></td>
+                            <td><input type="radio" name="q4" value="3"></td>
+                            <td><input type="radio" name="q4" value="4"></td>
+                            <td><input type="radio" name="q4" value="5"></td>
+                        </tr>
+                        <span id="q4Error" class="error-message"></span>
+                    </tbody>
+                </table>
+
+                <br>
+                <br>
+
+                <!-- Submit Button -->
+                    <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+
+            <script src="script.js"></script>
+    </body>
+</html>

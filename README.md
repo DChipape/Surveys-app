@@ -1,0 +1,1 @@
+This is a survey application project that is built using HTML, CSS, JavaScript, Node.js, Express, and SQLite. It stores responses in a database as well as displays the dynamic analytics such as total number of responses, average age, food preferences, and activity trends.

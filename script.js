@@ -135,3 +135,4 @@ const youngest = validAges.length > 0 ? Math.min(...validAges) : 'N/A';
             console.error(err);
             alert('Error occurred');
         });
+    });
